@@ -35,28 +35,27 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated Bachelor",
+    location: "MNU Mongolian National University",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 3 years of studying. I immediately found a job as a game developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021 - 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "VR simulation developer",
+    location: "Mongolia, Uptech llc",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "i worked as a VR simulation developer almost 2 years and 6 months of front end dvelopment",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022",
+  },
+  {
+    title: "Game Developer",
+    location: "Mongolia, BlackCandy.io",
+    description: "I worked as a gamev developer 1 year.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023-2024",
   },
 ] as const;
 
@@ -85,6 +84,11 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "C#",
+  "Unity",
+  "Unreal Engine 4",
+  "Figma",
+  "Photoshop",
   "HTML",
   "CSS",
   "JavaScript",
@@ -94,14 +98,7 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
   "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "GraphQL",
   "Framer Motion",
 ] as const;
