@@ -1,17 +1,23 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import meImg from "@/public/me.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
@@ -59,7 +65,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Bayarmagnai.</span> I'm a{" "}
         <span className="font-bold">game developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
+        <span className="font-bold">1 years</span> of experience. I enjoy
         building <span className="italic">games & mechanics of player</span>. My
         focus is currently{" "}
         <span className="underline">Unity, (happy to learn new skills)</span>.
@@ -76,10 +82,10 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          // onClick={() => {
-          //   setActiveSection("Contact");
-          //   setTimeOfLastClick(Date.now());
-          // }}
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
