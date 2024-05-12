@@ -5,6 +5,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import ColBatImg from "@/public/ColBat.webp";
+import uptechImg from "@/public/uptech.png";
+import rareAnimalsImg from "@/public/gobi 6 rare animals.png";
 
 export const links = [
   {
@@ -61,25 +64,27 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Uptech.mn",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I worked as a participation and learning frontend and backend",
+    tags: ["React", "Gatsby.js", "Strapi", "Tailwind", "Graphql"],
+    imageUrl: uptechImg,
+    followURL: "https://www.uptech.mn/",
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    title: "Mongolian Gobi rare animals Simulation",
+    description: "My main role was develop a simulation in Unreal engine",
+    tags: ["Unreal engine 4"],
+    imageUrl: rareAnimalsImg,
+    followURL: "https://www.youtube.com/watch?v=TYu6nCEpiRM",
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    title: "Collect and Battle",
+    description: "Mobile game developed on Unity 3d",
+    tags: ["C#", "Unity"],
+    imageUrl: ColBatImg,
+    followURL:
+      "https://play.google.com/store/apps/details?id=io.blackcandy.collectandbattle",
   },
 ] as const;
 
