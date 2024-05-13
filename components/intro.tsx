@@ -64,11 +64,14 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Bayarmagnai.</span> I'm a{" "}
-        <span className="font-bold">game developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
+        <span className="font-bold">game developer & front-end developer</span>{" "}
+        with <span className="font-bold">2 years</span> of experience. I enjoy
         building <span className="italic">games & mechanics of player</span>. My
         focus is currently{" "}
-        <span className="underline">Unity, (happy to learn new skills)</span>.
+        <span className="underline">
+          Unity, React (happy to learn new skills)
+        </span>
+        .
       </motion.h1>
 
       <motion.div

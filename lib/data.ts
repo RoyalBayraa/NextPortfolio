@@ -49,7 +49,7 @@ export const experiencesData = [
     title: "VR simulation developer",
     location: "Mongolia, Uptech llc",
     description:
-      "i worked as a VR simulation developer almost 2 years and 6 months of front end dvelopment",
+      "i worked as a VR simulation developer almost 1.5 years and 6 months of front end dvelopment",
     icon: React.createElement(FaReact),
     date: "2022",
   },

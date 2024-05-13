@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  --line-color: #e5e7eb;
+html.light {
+  --line-color: rgb(229, 231, 235);
+}
+
+html.light {
+  --line-color: rgb(213, 215, 219);
 }
 
 html.dark {
