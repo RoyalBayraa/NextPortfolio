@@ -16,7 +16,7 @@ export default function Experience() {
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 mx-3">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -29,7 +29,8 @@ export default function Experience() {
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
-                padding: "1.3rem 2rem",
+                padding: "2rem 2rem",
+                
               }}
               contentArrowStyle={{
                 borderRight:
@@ -39,10 +40,11 @@ export default function Experience() {
               }}
               date={item.date}
               icon={item.icon}
+              dateClassName="mx-3"
               iconStyle={{
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
-                fontSize: "1.5rem",
+                fontSize: "1rem",
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>

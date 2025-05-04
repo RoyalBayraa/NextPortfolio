@@ -59,17 +59,17 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-balance"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Bayarmagnai.</span> I'm a{" "}
-        <span className="font-bold">game developer & front-end developer</span>{" "}
-        with <span className="font-bold">2 years</span> of experience. I enjoy
+        <span className="font-bold">Hello, I'm Bayarmagnai.</span> I'm on my{" "}
+        <span className="font-bold">game developer journey</span>{" "}
+        with <span className="font-bold">couple years</span> of hands on experience. I enjoy
         building <span className="italic">games & mechanics of player</span>. My
         focus is currently{" "}
         <span className="underline">
-          Unity, React (happy to learn new skills)
+          Be a good GAME DEVELOPER Nice to meet you.
         </span>
         .
       </motion.h1>
